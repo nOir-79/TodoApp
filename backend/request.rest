@@ -1,0 +1,17 @@
+###
+
+PUT  http://localhost:5000/addItem
+Content-Type: application/json
+
+{
+    "item":{
+        "title":"My daily life",
+        "content": "There's not much to do"
+    }
+}
+
+###
+GET http://localhost:5000/getItem/My%20daily%20life
+
+###
+DELETE http://localhost:5000/deleteItem/My%20daily%20life
