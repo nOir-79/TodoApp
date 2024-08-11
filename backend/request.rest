@@ -5,13 +5,45 @@ Content-Type: application/json
 
 {
     "item":{
-        "title":"My daily life",
+        "title":"I love my life",
         "content": "There's not much to do"
     }
 }
 
 ###
-GET http://localhost:5000/getItem/My%20daily%20life
+GET http://localhost:5000/getItem/I%20love%20my%20life
 
 ###
 DELETE http://localhost:5000/deleteItem/My%20daily%20life
+
+###
+PUT http://localhost:5000/updateItem
+Content-Type: application/json
+
+{
+    "title":"I love my life",
+    "updatedTodo":{
+        "title": "I love my life",
+        "content":"I want to live life"
+
+    }
+}
+
+### 
+POST  http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username":"Sadik Mahamud Shakshor",
+    "password": "as I am 2023",
+    "email":"shakshor123@gmail.com"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username":"Sadik Mahamud Shakshor",
+    "password":"as I am 2023"
+}
