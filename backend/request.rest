@@ -1,49 +1,49 @@
 ###
 
-PUT  http://localhost:5000/addItem
+PUT  http://localhost:5000/api/addItem
 Content-Type: application/json
 
 {
     "item":{
-        "title":"I love my life",
-        "content": "There's not much to do"
+        "title":"Mahi",
+        "content": "She's a beautiful girl"
     }
 }
 
 ###
-GET http://localhost:5000/getItem/I%20love%20my%20life
+GET http://localhost:5000/api/getItem/Mahi
 
 ###
-DELETE http://localhost:5000/deleteItem/My%20daily%20life
+DELETE http://localhost:5000/api/deleteItem/Mahi
 
 ###
-PUT http://localhost:5000/updateItem
+PUT http://localhost:5000/api/updateItem
 Content-Type: application/json
 
 {
-    "title":"I love my life",
+    "title":"Mahi",
     "updatedTodo":{
-        "title": "I love my life",
-        "content":"I want to live life"
+        "title": "Mahi",
+        "content":"I love her"
 
     }
 }
 
 ### 
-POST  http://localhost:5000/register
+POST  http://localhost:5000/authentication/register
 Content-Type: application/json
 
 {
-    "username":"Sadik Mahamud Shakshor",
+    "username":"Maisha Shawrin Mahi",
     "password": "as I am 2023",
-    "email":"shakshor123@gmail.com"
+    "email":"mahi123@gmail.com"
 }
 
 ###
-POST http://localhost:5000/login
+POST http://localhost:5000/authentication/login
 Content-Type: application/json
 
 {
-    "username":"Sadik Mahamud Shakshor",
+    "username":"Maisha Shawrin Mahi",
     "password":"as I am 2023"
 }
